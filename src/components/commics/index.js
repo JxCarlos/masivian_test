@@ -6,7 +6,6 @@ import {
   Container,
   CardDeck,
   Card,
-  Image
 } from "react-bootstrap";
 
 import "./styles/index.css";
