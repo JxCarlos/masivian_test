@@ -6,9 +6,6 @@ import {
   Container,
   CardDeck,
   Card,
-  ButtonToolbar,
-  Row,
-  Col,
   Image
 } from "react-bootstrap";
 
@@ -49,18 +46,18 @@ const Comics = ({ fechtSearchCommic, searchCommic }) => {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <ButtonToolbar>
-            
-                <Col onClick={() => onPressVotingButton("LIKE")}>
-									<Col><Image src={ImgLike} /></Col>
-                  <Col>{upVote}</Col>
-                </Col>
-                <Col onClick={() => onPressVotingButton("DISLIKE")}>
-                  <Image src={ImgDisLike} />
-                  {downVote}
-                </Col>
-             
-            </ButtonToolbar>
+            <div>
+							<div className="left" onClick={() => onPressVotingButton("LIKE")} style={{
+                backgroundImage: `url(${ImgLike})`
+              }}>
+								{upVote}
+							</div>
+							<div className="right"  onClick={() => onPressVotingButton("DISLIKE")} style={{
+                backgroundImage: `url(${ImgDisLike})`
+              }}>
+								{downVote}
+							</div>
+            </div>
           </Card.Footer>
         </Card>
       </CardDeck>

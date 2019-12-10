@@ -5,9 +5,26 @@
 	justify-content: center !important;
 }
 
-.col {
-	max-width: 50% !important;
+.left, .right {
+	width: 50%;
+	overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
 }
+
+.left {
+	float: left;
+	text-align: right;
+	padding-right: 38%;
+}
+.right {
+	text-align: center;
+	float: right;
+	padding-right: 25%;
+}
+
 @media (min-width: 576px){
 	.card-deck {
 			max-width: 50%;
