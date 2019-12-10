@@ -1,0 +1,17 @@
+.container {
+	margin-top: 8rem;
+}
+.btn-toolbar {
+	justify-content: center !important;
+}
+
+.col {
+	max-width: 50% !important;
+}
+@media (min-width: 576px){
+	.card-deck {
+			max-width: 50%;
+			margin-left: auto !important;
+			margin-right: auto !important;
+	}
+}
